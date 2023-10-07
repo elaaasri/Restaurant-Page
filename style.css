@@ -1,0 +1,113 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  background: url("./images/egg-background.avif");
+}
+/* div container */
+#content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+}
+/* header */
+#home-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+  height: 200px;
+  width: 100%;
+  font-size: 80px;
+  font-family: "MyFont";
+  color: rgb(255, 255, 54);
+  background-color: rgba(0, 0, 0, 0.8);
+  border-bottom: yellow 2px solid;
+}
+@font-face {
+  font-family: "MyFont";
+  src: url("./fonts/DancingScript-VariableFont_wght.ttf") format("woff");
+}
+#nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+button {
+  background-color: inherit;
+  border: none;
+  font-weight: bold;
+  padding: 15px;
+  cursor: pointer;
+  transition: background-color 0.4s ease;
+  border-radius: 15px;
+  font-family: "Poppins", sans-serif;
+  color: white;
+  font-size: 15px;
+  transition: transform 0.5s ease-in-out;
+}
+button:hover {
+  background-color: yellow;
+  color: black;
+  transform: translateY(-20%);
+}
+button:focus {
+  background-color: yellow;
+  color: black;
+}
+
+/* home main */
+#home-main {
+  height: 500px;
+  width: 500px;
+  background-color: rgba(0, 0, 0, 0.7);
+  border-radius: 20px;
+  border: solid 1px yellow;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+}
+#home-para {
+  color: white;
+  font-size: 40px;
+  font-family: "MyFont";
+}
+#home-small-para {
+  color: white;
+  font-family: "MyFont";
+  font-size: 25px;
+  text-align: center;
+}
+#home-image {
+  width: 45%;
+  width: 45%;
+  border-radius: 100px;
+}
+
+/* footer styles : */
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+  font-size: 11px;
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+  font-size: 13px;
+}
+.fa-github {
+  color: black;
+  font-size: 20px;
+  transition: transform 0.5s ease-in-out;
+}
+.fa-github:hover {
+  transform: rotate(360deg) scale(1.3);
+}
