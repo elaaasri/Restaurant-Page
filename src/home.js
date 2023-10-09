@@ -1,57 +1,24 @@
 const createHome = function () {
-  //
-  const divContaier = document.getElementById("content");
-
-  //
-  const header = document.createElement("h1");
-  header.id = "home-header";
-  header.textContent = "Egg'cellent";
-  //
-  const homeMain = document.createElement("div");
-  homeMain.id = "home-container";
-
-  //
+  // creating elements :
+  const divContainer = document.getElementById("content");
+  const homeContainer = document.createElement("div");
   const para = document.createElement("p");
   const smallPara = document.createElement("p");
+  const homeImage = document.createElement("img");
+  // adding ids :
+  homeContainer.id = "home-container";
   para.id = "home-para";
   smallPara.id = "home-small-para";
+  homeImage.id = "home-image";
+  homeImage.src = "../dist/images/yes.gif";
+  // adding textcontent :
   para.textContent = "We're All About Eggs.";
   smallPara.textContent =
     "if you're a fan of eggs (and who isn't?) you're in the right place.";
-  //
-  const homeImage = document.createElement("img");
-  homeImage.id = "home-image";
-  homeImage.src = "../dist/images/home-page-egg.jpg";
-  //
-  const nav = document.createElement("nav");
-  nav.id = "nav";
-  //
-  const homeContent = document.createElement("button");
-  homeContent.id = "home-button";
-  const menuContent = document.createElement("button");
-  menuContent.id = "menu-button";
-  const contactContent = document.createElement("button");
-  contactContent.id = "contact-button";
-
-  //
-  homeContent.textContent = "Home";
-  menuContent.textContent = "Menu";
-  contactContent.textContent = "Contact";
-  //
-  divContaier.appendChild(header);
-  divContaier.appendChild(homeMain);
-  //
-  nav.appendChild(homeContent);
-  nav.appendChild(menuContent);
-  nav.appendChild(contactContent);
-  //
-  header.appendChild(nav);
-  //
-  homeMain.appendChild(para);
-  homeMain.appendChild(homeImage);
-  homeMain.appendChild(smallPara);
-
-  console.log(homeMain);
+  // appending elements :
+  homeContainer.appendChild(para);
+  homeContainer.appendChild(homeImage);
+  homeContainer.appendChild(smallPara);
+  divContainer.appendChild(homeContainer);
 };
-
 export { createHome };

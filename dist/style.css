@@ -78,20 +78,21 @@ button:focus {
 }
 #home-para {
   color: white;
-  font-size: 40px;
+  font-size: 45px;
   font-family: "MyFont";
+  padding-bottom: 20px;
 }
 #home-small-para {
   color: white;
   font-family: "MyFont";
-  font-size: 25px;
+  font-size: 30px;
   text-align: center;
 }
 #home-image {
   border: solid 1px yellow;
-  width: 180px;
-  height: 250px;
-  border-radius: 70px;
+  width: 70%;
+  height: 40%;
+  border-radius: 40px;
 }
 /* menu content */
 #menu-container {
@@ -118,6 +119,7 @@ button:focus {
   color: white;
   font-size: 20px;
   text-align: center;
+  font-family: "MyFont";
 }
 
 /* footer styles : */
