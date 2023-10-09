@@ -1,13 +1,14 @@
 const createHome = function () {
   //
   const divContaier = document.getElementById("content");
+
   //
   const header = document.createElement("h1");
   header.id = "home-header";
   header.textContent = "Egg'cellent";
   //
   const homeMain = document.createElement("div");
-  homeMain.id = "home-main";
+  homeMain.id = "home-container";
 
   //
   const para = document.createElement("p");
@@ -26,8 +27,12 @@ const createHome = function () {
   nav.id = "nav";
   //
   const homeContent = document.createElement("button");
+  homeContent.id = "home-button";
   const menuContent = document.createElement("button");
+  menuContent.id = "menu-button";
   const contactContent = document.createElement("button");
+  contactContent.id = "contact-button";
+
   //
   homeContent.textContent = "Home";
   menuContent.textContent = "Menu";
@@ -45,6 +50,8 @@ const createHome = function () {
   homeMain.appendChild(para);
   homeMain.appendChild(homeImage);
   homeMain.appendChild(smallPara);
+
+  console.log(homeMain);
 };
 
 export { createHome };
