@@ -62,8 +62,9 @@ button:focus {
   color: black;
 }
 
-/* home main */
-#home-main {
+/* home content */
+#home-container,
+#menu-container {
   height: 500px;
   width: 500px;
   background-color: rgba(0, 0, 0, 0.7);
@@ -87,9 +88,36 @@ button:focus {
   text-align: center;
 }
 #home-image {
-  width: 45%;
-  width: 45%;
-  border-radius: 100px;
+  border: solid 1px yellow;
+  width: 180px;
+  height: 250px;
+  border-radius: 70px;
+}
+/* menu content */
+#menu-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 60px;
+  padding: 70px;
+  flex: 1;
+}
+#item-one,
+#item-two,
+#item-three,
+#item-four {
+  width: 180px;
+  height: 180px;
+  border: solid 1px yellow;
+  border-radius: 20px;
+}
+#item-one-para,
+#item-two-para,
+#item-three-para,
+#item-four-para {
+  color: white;
+  font-size: 20px;
+  text-align: center;
 }
 
 /* footer styles : */
@@ -102,9 +130,13 @@ button:focus {
   font-family: "Poppins", sans-serif;
   font-weight: bold;
   font-size: 13px;
+  background-color: rgba(0, 0, 0, 0.8);
+  margin-top: 20px;
+  color: white;
+  border-top: 1px solid yellow;
 }
 .fa-github {
-  color: black;
+  color: white;
   font-size: 20px;
   transition: transform 0.5s ease-in-out;
 }
