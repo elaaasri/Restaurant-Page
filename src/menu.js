@@ -31,7 +31,7 @@ const createMenu = function () {
   menuItemFour.src = "../dist/images/item-four.jpg";
   itemOnePara.textContent = "Bread, Cabbage, Eggs, Tomato, Beef.";
   itemTwoPara.textContent = "Eggs, Bread, Cheese, Cilantro.";
-  itemThreePara.textContent = "Rice, Eggs, Peper, Cialtro, Beef.";
+  itemThreePara.textContent = "Rice, Eggs, Peper, Tomato, Cialtro, Beef.";
   itemFourPara.textContent = "Brown Bread, Eggs, Beef, Green Cabbage.";
   // appending elements :
   divContaier.appendChild(menuContainer);

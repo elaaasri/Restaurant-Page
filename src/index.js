@@ -1,5 +1,6 @@
 import { createHome } from "./home.js";
 import { createMenu } from "./menu.js";
+import { createContact } from "./contact.js";
 
 // select main container :
 const divContainer = document.getElementById("content");
@@ -40,38 +41,41 @@ const createNav = function () {
 createHeader();
 createNav();
 createButtons();
+
 // initial load page :
 window.onload = () => {
   createHome();
 };
+
 // func to delete other pages for home button :
-function removeOtherPagesForHome() {
-  const homeContainer = document.getElementById("home-container");
-  const menuContainer = document.getElementById("menu-container");
-  if (divContainer.contains(homeContainer)) {
-    console.log("home exist");
-    return;
-  } else {
-    createHome();
-    menuContainer.remove();
-  }
+function renderHome() {
+  deleteCurrentElement();
+  createHome();
 }
 // home button event :
 const homeButton = document.getElementById("home-button");
-homeButton.addEventListener("click", removeOtherPagesForHome);
+homeButton.addEventListener("click", renderHome);
 
 // func to delete other pages for menu button :
-function removeOtherPagesForMenu() {
-  const homeContainer = document.getElementById("home-container");
-  const menuContainer = document.getElementById("menu-container");
-  if (divContainer.contains(menuContainer)) {
-    console.log("menu exist");
-    return;
-  } else {
-    createMenu();
-    homeContainer.remove();
-  }
+function renderMenu() {
+  deleteCurrentElement();
+  createMenu();
 }
 // menu button event :
 const menuButton = document.getElementById("menu-button");
-menuButton.addEventListener("click", removeOtherPagesForMenu);
+menuButton.addEventListener("click", renderMenu);
+
+// func to delete other pages for contact button :
+function renderContact() {
+  deleteCurrentElement();
+  createContact();
+}
+// menu button event :
+const contactButton = document.getElementById("contact-button");
+contactButton.addEventListener("click", renderContact);
+
+// func to delete the current element :
+function deleteCurrentElement() {
+  const targetElement = divContainer.children[1];
+  targetElement.remove();
+}

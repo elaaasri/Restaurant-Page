@@ -10,7 +10,7 @@ const createHome = function () {
   para.id = "home-para";
   smallPara.id = "home-small-para";
   homeImage.id = "home-image";
-  homeImage.src = "../dist/images/yes.gif";
+  homeImage.src = "../dist/images/gif-egg.gif";
   // adding textcontent :
   para.textContent = "We're All About Eggs.";
   smallPara.textContent =
@@ -21,4 +21,5 @@ const createHome = function () {
   homeContainer.appendChild(smallPara);
   divContainer.appendChild(homeContainer);
 };
+
 export { createHome };
