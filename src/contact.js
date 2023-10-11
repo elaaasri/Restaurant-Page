@@ -16,7 +16,7 @@ const createContact = function () {
   contactAddress.id = "contact-address";
   addressPara.id = "contact-para";
   contactImage.id = "contact-image";
-  contactImage.src = "../dist/images/egg-contact.jpg";
+  contactImage.src = "../images/egg-contact.jpg";
   //   appengind elements :
   contactContainer.appendChild(addressPara);
   contactContainer.appendChild(contactImage);

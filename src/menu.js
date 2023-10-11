@@ -25,10 +25,10 @@ const createMenu = function () {
   itemThreePara.id = "item-three-para";
   itemFourPara.id = "item-four-para";
   // adding textcontent :
-  menuItemOne.src = "../dist/images/item-one.jpg";
-  menuItemTwo.src = "../dist/images/item-two.jpg";
-  menuItemThree.src = "../dist/images/item-three.jpg";
-  menuItemFour.src = "../dist/images/item-four.jpg";
+  menuItemOne.src = "../images/item-one.jpg";
+  menuItemTwo.src = "../images/item-two.jpg";
+  menuItemThree.src = "../images/item-three.jpg";
+  menuItemFour.src = "../images/item-four.jpg";
   itemOnePara.textContent = "Bread, Cabbage, Eggs, Tomato, Beef.";
   itemTwoPara.textContent = "Eggs, Bread, Cheese, Cilantro.";
   itemThreePara.textContent = "Rice, Eggs, Peper, Tomato, Cialtro, Beef.";
