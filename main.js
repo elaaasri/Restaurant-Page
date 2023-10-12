@@ -10,7 +10,7 @@
         (n.id = "home-para"),
         (d.id = "home-small-para"),
         (o.id = "home-image"),
-        (o.src = "../images/gif-egg.gif"),
+        (o.src = "images/gif-egg.gif"),
         (n.textContent = "We're All About Eggs."),
         (d.textContent =
           "if you're a fan of eggs (and who isn't?) you're in the right place."),
